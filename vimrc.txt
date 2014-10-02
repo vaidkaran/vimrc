@@ -15,7 +15,6 @@ set wildmenu
 set showmatch
 set incsearch
 set hlsearch
-"let mapleader="<space>"
 let mapleader=" "
 nmap <tab> <C-W><C-W>
 map <S-leader> <Esc>
