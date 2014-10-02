@@ -17,5 +17,4 @@ set incsearch
 set hlsearch
 let mapleader=" "
 nmap <tab> <C-W><C-W>
-map <S-leader> <Esc>
-
+imap jj <Esc>
