@@ -25,6 +25,8 @@ Plugin 'ervandew/supertab'
 Plugin 'kien/ctrlp.vim'
 " color scheme
 Plugin 'zeis/vim-kolor'
+" Nerd commenter
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
