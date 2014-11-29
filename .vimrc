@@ -12,7 +12,7 @@ Plugin 'bling/vim-airline'
 " Rails :/
 Plugin 'tpope/vim-rails.git'
 " Snippets for our use :)
-Plugin 'garbas/vim-snipmate'
+Plugin 'msanders/snipmate.vim'
 " Vim Ruby
 Plugin 'vim-ruby/vim-ruby'
 " Surround your code :)
@@ -27,6 +27,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'zeis/vim-kolor'
 " Nerd commenter
 Plugin 'scrooloose/nerdcommenter'
+" Nerd tree
+Plugin 'scrooloose/nerdtree'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
