@@ -55,8 +55,10 @@ filetype indent on
 set wildmenu
 set showmatch
 set incsearch
-"set hlsearch
+set hlsearch
 let mapleader=';'
 nmap <tab> <C-W><C-W>
 imap jj <Esc>
 cmap jj <Esc> 
+let g:AutoPairsShortcutJump='<leader><CR>'
+
