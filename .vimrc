@@ -20,7 +20,7 @@ Plugin 'tpope/vim-surround'
 " Every one should have a pair (Autogenerate pairs for {[( )
 Plugin 'jiangmiao/auto-pairs'
 " Tab completions
-Plugin 'ervandew/supertab'
+"Plugin 'ervandew/supertab'
 " Fuzzy finder for vim (CTRL+P)
 Plugin 'kien/ctrlp.vim'
 " color scheme
@@ -29,7 +29,8 @@ Plugin 'zeis/vim-kolor'
 Plugin 'scrooloose/nerdcommenter'
 " Nerd tree
 Plugin 'scrooloose/nerdtree'
-
+" Tabular -- alignment plugin
+Plugin 'godlygeek/tabular'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
