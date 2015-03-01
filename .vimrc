@@ -1,5 +1,11 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
+" filetype off                  " required
+
+" Enabling ruby extentions
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -11,10 +17,10 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 " Rails :/
 Plugin 'tpope/vim-rails.git'
+" vim ruby support
+Plugin 'vim-ruby/vim-ruby'
 " Snippets for our use :)
 Plugin 'msanders/snipmate.vim'
-" Vim Ruby
-Plugin 'vim-ruby/vim-ruby'
 " Surround your code :)
 Plugin 'tpope/vim-surround'
 " Every one should have a pair (Autogenerate pairs for {[( )
@@ -45,6 +51,18 @@ let g:kolor_bold=1 " Enable bold. Default: 1
 let g:kolor_underlined=0 " Enable underline for 'Underlined'. Default: 0
 let g:kolor_alternative_matchparen=0 " Gray 'MatchParen' color. Default: 0 
 colorscheme kolor
+
+" omni-completion for vim
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
+" set ruby compiler
+autocmd FileType ruby compiler ruby
+" Vim will load/evaluate code in order to provide completions
+let g:rubycomplete_buffer_loading = 1
+" Vim can parse the entire buffer to add a list of classes to the completion results
+let g:rubycomplete_classes_in_global = 1
+
 
 set tabstop=2 " number of visual spaces per tab
 set expandtab " tabs are spaces
