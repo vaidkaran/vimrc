@@ -37,10 +37,11 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 " Tabular -- alignment plugin
 Plugin 'godlygeek/tabular'
+" Whitespace highlighting for vim
+Plugin 'ntpeters/vim-better-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
 
 " Syntax highlighting and theme
 syntax enable
@@ -53,7 +54,6 @@ let g:kolor_alternative_matchparen=0 " Gray 'MatchParen' color. Default: 0
 colorscheme kolor
 
 " omni-completion for vim
-filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
 " set ruby compiler
