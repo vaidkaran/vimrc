@@ -83,4 +83,7 @@ imap jj <Esc>
 cmap jj <Esc>
 let g:AutoPairsShortcutJump='<leader><CR>'
 cmap <leader>p <C-R>*
+nmap <leader>q :q<CR>
+nmap <leader>t :tabnew<CR>
+nmap <leader>w :w<CR>
 
