@@ -1,12 +1,6 @@
 set nocompatible              " be iMproved, required
 set backspace=indent,eol,start
 
-" Enabling ruby extentions
-syntax on             " Enable syntax highlighting
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -19,8 +13,12 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-rails.git'
 " vim ruby support
 Plugin 'vim-ruby/vim-ruby'
-" Snippets for our use :)
-Plugin 'msanders/snipmate.vim'
+"" Snippets for our use :)
+"Plugin 'msanders/snipmate.vim'
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
 " Surround your code :)
 Plugin 'tpope/vim-surround'
 " Every one should have a pair (Autogenerate pairs for {[( )
@@ -39,7 +37,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'godlygeek/tabular'
 " Whitespace highlighting for vim
 Plugin 'ntpeters/vim-better-whitespace'
-" Autocomplete plugin for vim
+"" Autocomplete plugin for vim
 Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
@@ -82,8 +80,14 @@ nmap <tab> <C-W><C-W>
 imap jj <Esc>
 cmap jj <Esc>
 let g:AutoPairsShortcutJump='<leader><CR>'
-cmap <leader>p <C-R>"
+cmap <leader>p <C-R>*
 nmap <leader>q :q<CR>
 nmap <leader>t :tabnew<CR>
 nmap <leader>w :w<CR>
-nmap <leader>rg :Rgrep<CR><C-w><C-R>"<CR><CR><CR>
+nmap <leader>rg :Rgrep<CR><C-w><C-R>*<CR><CR><CR>
+
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<leader><tab>"
+let g:UltiSnipsJumpForwardTrigger="<leader><tab>"
+let g:UltiSnipsJumpBackwardTrigger="<leader><leader><tab>"
