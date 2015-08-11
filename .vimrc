@@ -80,11 +80,13 @@ nmap <tab> <C-W><C-W>
 imap jj <Esc>
 cmap jj <Esc>
 let g:AutoPairsShortcutJump='<leader><CR>'
-cmap <leader>p <C-R>*
+cmap <leader>p <C-R>"
 nmap <leader>q :q<CR>
 nmap <leader>t :tabnew<CR>
 nmap <leader>w :w<CR>
 nmap <leader>rg :Rgrep<CR><C-w><C-R>"<CR><CR><CR>
+nmap <leader>z <C-z>
+nmap <leader>N :NERDTreeToggle<CR>
 
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
