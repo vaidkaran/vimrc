@@ -1,6 +1,9 @@
 set nocompatible              " be iMproved, required
 set backspace=indent,eol,start
 
+" Needed for vundle, will be turned on after vundle inits
+filetype off
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -13,12 +16,6 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-rails.git'
 " vim ruby support
 Plugin 'vim-ruby/vim-ruby'
-"" Snippets for our use :)
-"Plugin 'msanders/snipmate.vim'
-" Track the engine.
-Plugin 'SirVer/ultisnips'
-" Snippets are separated from the engine. Add this if you want them:
-Plugin 'honza/vim-snippets'
 " Surround your code :)
 Plugin 'tpope/vim-surround'
 " Every one should have a pair (Autogenerate pairs for {[( )
@@ -39,9 +36,15 @@ Plugin 'godlygeek/tabular'
 Plugin 'ntpeters/vim-better-whitespace'
 "" Autocomplete plugin for vim
 Plugin 'Valloric/YouCompleteMe'
+" Ultisnip engine
+Plugin 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+filetype plugin indent on
 
 " Syntax highlighting and theme
 syntax enable
@@ -70,7 +73,6 @@ set shiftwidth=2
 set number
 set cursorline
 set smartindent
-filetype indent on
 set wildmenu
 set showmatch
 set incsearch
