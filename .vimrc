@@ -89,7 +89,10 @@ nmap <leader>w :w<CR>
 nmap <leader>rg :Rgrep<CR><C-w><C-R>"<CR><CR><CR>
 nmap <leader>z <C-z>
 nmap <leader>N :NERDTreeToggle<CR>
-nmap <leader>e :e#<CR>
+nmap <leader>ee :e#<CR>
+nmap <leader>ec :Econtroller<space>
+nmap <leader>em :Emodel<space>
+nmap <leader>ev :Eview<space>
 
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
