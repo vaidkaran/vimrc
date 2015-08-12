@@ -88,7 +88,8 @@ nmap <leader>t :tabnew<CR>
 nmap <leader>w :w<CR>
 nmap <leader>rg :Rgrep<CR><C-w><C-R>"<CR><CR><CR>
 nmap <leader>z <C-z>
-nmap <leader>N :NERDTreeToggle<CR>
+nmap <leader>nt :NERDTreeToggle<CR>
+nmap <leader>nh :nohlsearch<CR>
 nmap <leader>ee :e#<CR>
 nmap <leader>ec :Econtroller<space>
 nmap <leader>em :Emodel<space>
