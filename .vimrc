@@ -56,6 +56,18 @@ let g:kolor_underlined=0 " Enable underline for 'Underlined'. Default: 0
 let g:kolor_alternative_matchparen=0 " Gray 'MatchParen' color. Default: 0
 colorscheme kolor
 
+" Code folding settings
+set foldmethod=indent   " fold based on indent
+set foldnestmax=10      " deepest fold is 10 levels
+set nofoldenable        " dont fold by default
+set foldlevel=1         " this is just what i use
+" za - toggles
+" zc - closes
+" zo - opens
+" zR - open all
+" zM - close all
+" help :folding if you get stuck
+
 
 " set ruby compiler
 autocmd FileType ruby compiler ruby
