@@ -93,7 +93,7 @@ let mapleader=';'
 nmap <tab> <C-W><C-W>
 imap jj <Esc>
 cmap jj <Esc>
-let g:AutoPairsShortcutJump='<leader><CR>'
+let g:AutoPairsShortcutJump='<leader><leader>'
 cmap <leader>p <C-R>"
 nmap <leader>q :q<CR>
 nmap <leader>t :tabnew<CR>
