@@ -40,6 +40,18 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
+" Nodejs
+Plugin 'moll/vim-node'
+" Js linting
+Plugin 'Shutnik/jshint2.vim'
+" Js syntax
+Plugin 'jelera/vim-javascript-syntax'
+" Auto-complete for js
+Plugin 'marijnh/tern_for_vim'
+
+
+" Disable tern scratch preview
+set completeopt-=preview
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -109,6 +121,6 @@ nmap <leader>ev :Eview<space>
 
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
-"let g:UltiSnipsExpandTrigger="<leader><tab>"
-"let g:UltiSnipsJumpForwardTrigger="<leader><tab>"
-"let g:UltiSnipsJumpBackwardTrigger="<leader><leader><tab>"
+let g:UltiSnipsExpandTrigger="<leader><tab>"
+let g:UltiSnipsJumpForwardTrigger="<leader><tab>"
+let g:UltiSnipsJumpBackwardTrigger="<leader>p<tab>"
