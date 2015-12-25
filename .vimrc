@@ -101,6 +101,7 @@ set wildmenu
 set showmatch
 set incsearch
 set hlsearch
+set ignorecase
 let mapleader=';'
 nmap <tab> <C-W><C-W>
 imap jj <Esc>
