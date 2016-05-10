@@ -20,8 +20,6 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-surround'
 " Every one should have a pair (Autogenerate pairs for {[( )
 Plugin 'jiangmiao/auto-pairs'
-" Tab completions
-"Plugin 'ervandew/supertab'
 " Fuzzy finder for vim (CTRL+P)
 Plugin 'kien/ctrlp.vim'
 " color scheme
@@ -48,10 +46,8 @@ Plugin 'Shutnik/jshint2.vim'
 Plugin 'jelera/vim-javascript-syntax'
 " Auto-complete for js
 Plugin 'marijnh/tern_for_vim'
-
-
-" Disable tern scratch preview
-set completeopt-=preview
+" Fugitive for git
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -90,6 +86,10 @@ let g:rubycomplete_classes_in_global = 1
 
 " omni-completion for vim
 set omnifunc=syntaxcomplete#Complete
+
+
+" Disable tern scratch preview
+set completeopt-=preview
 
 set tabstop=2 " number of visual spaces per tab
 set expandtab " tabs are spaces
