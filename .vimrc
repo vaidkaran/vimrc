@@ -48,6 +48,8 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'marijnh/tern_for_vim'
 " Fugitive for git
 Plugin 'tpope/vim-fugitive'
+" Grep
+Plugin 'yegappan/grep'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
