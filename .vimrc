@@ -122,6 +122,10 @@ nmap <leader>ee :e#<CR>
 nmap <leader>ec :Econtroller<space>
 nmap <leader>em :Emodel<space>
 nmap <leader>ev :Eview<space>
+nmap <leader><down> :resize +2<cr>
+nmap <leader><up> :resize -2<cr>
+nmap <leader><left> :vertical resize -2<cr>
+nmap <leader><right> :vertical resize +2<cr>
 
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
