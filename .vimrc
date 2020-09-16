@@ -81,6 +81,8 @@ set foldlevel=1         " this is just what i use
 
 " set ruby compiler
 autocmd FileType ruby compiler ruby
+" enhance YCM JS completion with tern's smarts
+autocmd FileType javascript setlocal omnifunc=tern#Complete
 " Vim will load/evaluate code in order to provide completions
 let g:rubycomplete_buffer_loading = 1
 " Vim can parse the entire buffer to add a list of classes to the completion results
